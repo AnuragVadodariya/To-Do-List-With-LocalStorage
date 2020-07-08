@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do-list WIth JS & Bootstrap 4</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center">To-Do-List With JS & Bootstrap 4</h1><br><br>
+    <div class="container w-50">
+        <div class="form-group">
+            <input type="text" placeholder="Enter Activity" id="inpList" class="form-control"><br>
+            <input type="submit" id="btnAdd" value="Add" class="form-control btn btn-primary">
+        </div>  
+    </div><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 align="center">UnCompleted Activity</h4>
+                <table class="table table-bordered table-hover">
+                        <thead align="center">
+                            <tr>
+                                <th>No</th>
+                                <th>Activity Name</th>
+                                <th>Done</th>
+                            </tr>
+                        </thead>
+                        <tbody id="display_uncom_list" align="center"></tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <h4 align="center">Completed Activity</h4>
+                <table class="table table-bordered table-hover">
+                        <thead align="center">
+                            <tr>
+                                <th>No</th>
+                                <th>Activity Name</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="display_com_list" align="center"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
